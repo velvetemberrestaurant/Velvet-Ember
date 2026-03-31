@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Ember - Home</title>
+    <style>
+        /* General Body and Font Settings */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ff7f50; /* Warm coral color */
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            color: white;
+            font-size: 36px;
+        }
+
+        .navbar nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar input[type="text"] {
+            padding: 7px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #f3a683, #f7b731); /* Gradient from light orange to yellow */
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            background-size: cover;
+        }
+
+        .hero-text h2 {
+            font-size: 50px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .hero .btn-cta {
+            background-color: #ff7f50; /* Coral color */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .hero .btn-cta:hover {
+            background-color: #e66c39;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .about-content h3 {
+            font-size: 36px;
+            color: #ff7f50;
+        }
+
+        .about-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            color: #ff7f50;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #777;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .navbar nav ul li {
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <h1>Velvet Ember</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="job.html">Job Openings</a></li>
+                    <li><a href="job-tracking.html">Job Tracking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <input type="text" id="search" placeholder="Search...">
+        </div>
+    </header>
+
+    <!-- Hero Section with Welcome Message -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Welcome to Velvet Ember</h2>
+            <p>Your premier destination for fine dining and exceptional experiences.</p>
+            <a href="menu.html" class="btn-cta">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h3>About Velvet Ember</h3>
+            <p>We offer a delightful fusion of contemporary dining with traditional flavors, bringing the finest food and service to your table. From a warm ambiance to delectable dishes, Velvet Ember is the perfect place for every occasion.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card">
+            <h3>Exquisite Cuisine</h3>
+            <p>From appetizers to desserts, experience the finest dishes prepared with passion and quality ingredients.</p>
+        </div>
+        <div class="service-card">
+            <h3>Cozy Atmosphere</h3>
+            <p>Our cozy, elegant environment ensures a pleasant dining experience for all our guests.</p>
+        </div>
+        <div class="service-card">
+            <h3>Exceptional Service</h3>
+            <p>Our trained staff provides top-notch service with a personal touch, making every meal special.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Velvet Ember. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Search functionality for easy redirection
+        document.getElementById('search').addEventListener('input', function() {
+            if (this.value.toLowerCase() === "about") {
+                window.location.href = "about.html";
+            } else if (this.value.toLowerCase() === "home") {
+                window.location.href = "index.html";
+            }
+        });
+    </script>
+</body>
+  </html>
