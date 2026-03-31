@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Ember - Home</title>
+    <style>
+        /* General Body and Font Settings */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #e67e22; /* Rich Orange Color */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar h1 {
+            color: white;
+            font-size: 36px;
+        }
+
+        .navbar nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar nav ul li {
+            margin-left: 30px;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .navbar input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('image1.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Add your restaurant images */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 60px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: 300;
+        }
+
+        .hero .btn-cta {
+            background-color: #e67e22; /* Button color */
+            color: white;
+            padding: 15px 35px;
+            font-size: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .hero .btn-cta:hover {
+            background-color: #c56e20;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .about h3 {
+            font-size: 36px;
+            color: #e67e22;
+            font-weight: 600;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 25px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            color: #e67e22;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #777;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .navbar nav ul li {
+                margin-left: 15px;
+            }
+
+            .hero h2 {
+                font-size: 45px;
+            }
+
+            .hero p {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <h1>Velvet Ember</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="job.html">Job Openings</a></li>
+                    <li><a href="job-tracking.html">Job Tracking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <input type="text" id="search" placeholder="Search...">
+        </div>
+    </header>
+
+    <!-- Hero Section with Welcome Message -->
+    <section class="hero">
+        <h2>Welcome to Velvet Ember</h2>
+        <p>Indulge in a memorable dining experience with exquisite flavors and ambiance.</p>
+        <a href="menu.html" class="btn-cta">Explore Our Menu</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h3>About Velvet Ember</h3>
+        <p>At Velvet Ember, we combine luxury with comfort. Our dishes are carefully crafted to provide the perfect balance of flavors. Whether it's a special occasion or a casual night out, Velvet Ember promises an unforgettable dining experience.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card">
+            <h3>Exquisite Cuisine</h3>
+            <p>Our menu is a blend of traditional and contemporary dishes, prepared by our expert chefs to delight your senses.</p>
+        </div>
+        <div class="service-card">
+            <h3>Elegant Ambiance</h3>
+            <p>Our restaurant's atmosphere is designed to provide a cozy and refined dining experience, perfect for any occasion.</p>
+        </div>
+        <div class="service-card">
+            <h3>Impeccable Service</h3>
+            <p>Our trained staff is dedicated to making your dining experience perfect, from start to finish.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Velvet Ember. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Search functionality for easy redirection
+        document.getElementById('search').addEventListener('input', function() {
+            if (this.value.toLowerCase() === "about") {
+                window.location.href = "about.html";
+            } else if (this.value.toLowerCase() === "home") {
+                window.location.href = "index.html";
+            }
+        });
+    </script>
+</body>
+  </html>
